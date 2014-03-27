@@ -1,0 +1,10 @@
+;;;; -*- Mode: Lisp; Package: CL-USER -*-
+
+(in-package bootstrap)
+
+(defsystem :racehorse (:pretty-name "Racehorse" :default-pathname #P"rutils:racehorse;")
+  (:serial "pkgdcl")
+  (:serial "anaphora" "utils")
+  (:serial "conditions" "resources" "interface")
+  (:serial "string-buffers" "string-buffer-ops" "octet-buffers" "octet-buffer-ops"))
+
